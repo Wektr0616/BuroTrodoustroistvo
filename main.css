@@ -1,0 +1,108 @@
+          .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #316c54;
+          color: white;
+          border-radius: 5px;
+        }
+        ul {
+          width: 180px; /* Ширина меню */
+          list-style: none; /* Для списка убираем маркеры */
+          margin: 0; /* Нет отступов вокруг */
+          padding: 0; /* Убираем поля вокруг текста */
+          font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+          font-size: 10pt; /* Размер названий в пункте меню */
+        }
+        li ul {
+        position: absolute; /* Подменю позиционируются абсолютно */
+        display: none; /* Скрываем подменю */
+        margin-left: 65px; /* Сдвигаем подменю вправо */
+        margin-top: -2em; /* Сдвигаем подменю вверх */
+        }
+        li a {
+        display: block; /* Ссылка как блочный элемент */
+        padding: 5px; /* Поля вокруг надписи */
+        text-decoration: none; /* Подчеркивание у ссылок убираем */
+        color: #666; /* Цвет текста */
+        border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
+        background-color: #f0f0f0; /* Цвет фона */
+        border-bottom: none; /* Границу снизу не проводим */
+        border-radius: 10px
+        }
+        li a:hover {
+        color: #ffe; /* Цвет текста активного пункта */
+        background-color: #5488af; /* Цвет фона активного пункта */
+        }
+        li:hover ul {
+        display: block; /* При выделении пункта курсором мыши отображается
+        подменю */
+        }
+         body {
+            background-image: url(фон/bg3.jpg);
+            margin: 0;
+            }
+            #main {
+            display: flex;
+            min-height: calc(80vh - 60vh); }
+            main{
+              text-align: center;
+              background-color: rgba(162, 173, 208, 0.705);
+              border-radius: 10px
+          }
+          main{
+            height: auto;
+            width: auto;
+          }
+          body {
+              font-family: Arial, sans-serif; /* Устанавливаем шрифт для всего документа */
+          }
+          main.satr {
+              flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку */
+              justify-content: center; /* Центрируем элементы по горизонтали */
+          }
+          .employee {
+              margin: 15px; /* Отступ между элементами */
+              flex: 1 1 150px; /* Позволяет элементам изменять размер, минимальная ширина 150px */
+              background: #d9dabb; /* Цвет фона */
+              width: 170px; /* Ширина */
+              margin: 0 10px 10px 0; /* Отступы */
+              padding: 10px 0; /* Поля сверху и снизу */
+              text-align: center; /* Выравнивание по центру */
+              display: inline-block; /* Строчно-блочный элемент */
+              border-radius: 15px;
+              border: 5px solid #7FC7FF; /* Параметры рамки */
+              border-radius: 20px;
+              width: 250px;           
+          }
+        header, footer {
+        background:linear-gradient(rgba(230, 8, 238, 0.5), rgba(9, 13, 238, 0.5));
+        height: 20vh;
+        }
+        .index{
+          align-content: center;
+        }
+        @media (max-width: 400px) {
+          nav{display: none;}
+          }
+          nav1 {
+            display: none; /* Скрываем nav1 по умолчанию */
+        }
+        
+        /* Показываем nav1 только на экранах шириной 400px и меньше */
+        @media (max-width: 400px) {
+            nav1 {
+                display: flex; /* Показываем nav1 как flex контейнер */
+            }
+          }
+          nav1 .menu {
+            display: flex; /* Элементы располагаются в строку */
+        }
+        nav1 .menu li {
+            margin-right: 15px; /* Отступ между пунктами меню в строке */
+        }
+        .index{
+          align-content: center;
+        }
+
+          

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="фон/Трудоустройство.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 align="center">Бюро по трудоустройству</h1>
+        <h2 align="center">Мы работаем для вас</h2>
+        <nav1>
+            <ul class="menu">
+             <li><a href="index.html"> Главная </a></li><br>
+             <li><a>Меню</a>
+             <ul>
+             <li><a href="employee.html">Работники</a></li>
+             <li><a href="about.html">О компании</a></li>
+             <li class="marker"><a href="order.html">Поиск работы</a></li>
+             <li class="marker"><a href="order2.html">Поиск работников</a></li>
+             </ul>
+            </li>
+        </ul>
+         </nav1>
+    </header>
+   
+        <div id="main">
+            <nav>
+                <ul class="menu">
+                 <li><a href="index.html"> Главная </a></li><br>
+                 <li><a>Меню</a>
+                 <ul>
+                 <li><a href="employee.html">Работники</a></li>
+                 <li><a href="about.html">О компании</a></li>
+                 <li class="marker"><a href="order.html">Поиск работы</a></li>
+                 <li class="marker"><a href="order2.html">Поиск работников</a></li>
+                 </ul>
+                </li>
+            </ul>
+             </nav>
+    <main class="post">
+        
+        <section class="order1">
+            <h3>Поиск работы</h3>
+            <form action="orderup" method="post">
+                    <legend>Бланк для заполнения</legend>
+                    <fieldset>
+                        <label>
+                            Молодой специалист
+                            <input type="radio" name="payment_method" value="mol" checked />
+                        </label>
+                        <label>
+                            Опотный специалист
+                            <input type="radio" name="payment_method" value="opot" checked />
+                        </label>
+                        <label>
+                            Пожилой работник
+                            <input type="radio" name="payment_method" value="star" />
+                        </label>
+                    </fieldset>
+                <center>
+                <table>
+                    <tr>
+                        <td align="right">
+                            <label for="last_name">Фамилия</label>
+                        </td>
+                        <td>
+                            <input type="text" id="last_name" name="last_name" required placeholder="Введите фамилию" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="first_name">Имя</label>
+                        </td>
+                        <td>
+                            <input type="text" id="first_name" name="first_name" required placeholder="Введите имя" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="patronymic">Отчество</label>
+                        </td>
+                        <td>
+                            <input type="text" id="patronymic" name="patronymic" placeholder="Введите отчество" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" required placeholder="Введите email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="phone">Телефон</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" required placeholder="Введите телефон" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="password">Специальность</label>
+                        </td>
+                        <td>
+                            <input type="text" id="password" name="password" required placeholder="Специальность" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="password_confirm">Опыт работы</label>
+                        </td>
+                        <td>
+                            <input type="text" id="opit" name="opit" required placeholder="Опыт работы" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="okrug">Федеральный округ</label>
+                        </td>
+                        <td>
+                            <select id="okrug" name="okrug" required placeholder="Выберите федеральный округ">
+                                <option value="">Выберите округ</option>
+                                <option value="Центральный">Центральный</option>
+                                <option value="Северо-Западный">Северо-Западный</option>
+                                <option value="Приволжский">Приволжский</option>
+                                <option value="Южный">Южный</option>
+                                <option value="Северо-Кавказский">Северо-Кавказский</option>
+                                <option value="Уральский">Уральский</option>
+                                <option value="Сибирский">Сибирский</option>
+                                <option value="Дальневосточный">Дальневосточный</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="right">
+                            <label for="wishes">Небольшое резюме:</label>
+                        </td>
+                        <td>
+                            <textarea id="wishes" name="wishes" placeholder="Небольшое резюме"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2">
+                            <input type="submit" value="Отправить бланк" />
+                        </td>
+                    </tr>
+                </table> 
+            </center>  
+            </form>
+            <section class="orgif">
+                <embed source src="фон/гифрост.gif" type="video/mp4" height="350" width="350">
+            </section> 
+        </section>    
+    </main>
+    <aside></aside>
+</div>
+
+
+    <footer>
+        <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Наверх</button> 
+        <p><i>©Никиткина компания</i></p>
+    </footer>
+</body>
+</html>
